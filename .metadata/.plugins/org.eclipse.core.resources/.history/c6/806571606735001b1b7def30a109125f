@@ -1,0 +1,12 @@
+package br.com.universidadexyz.beans;
+
+public class Curso {
+	
+	private String descricao;
+	private float valor;
+	private short cargaHoraria;
+	private String sigla;
+	private int id;
+	private int duracao;
+
+}

@@ -1,0 +1,28 @@
+package br.com.universidadexyz.implementacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.universidadexyz.beans.Aluno;
+
+public class ImplementarAluno {
+
+	public static void main(String[] args) {
+		
+		Aluno aluno = new Aluno();
+		String cpf = JOptionPane.showInputDialog("CPF")
+		String nome = JOptionPane.showInputDialog("Nome");
+		int rm = Integer.parseInt(JOptionPane.showInputDialog("RM"));
+		
+		
+		aluno.setCpf(cpf);
+		aluno.setNome(nome);
+		aluno.setRm(rm);
+		
+		
+		System.out.println("Nome: " + aluno.getNome());
+		System.out.println("CPF.: " + aluno.getCpf());
+		System.out.println("RM..: " + aluno.getRm());
+
+	}
+
+}

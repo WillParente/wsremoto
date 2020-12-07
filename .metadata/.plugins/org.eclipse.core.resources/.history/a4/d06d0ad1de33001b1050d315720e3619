@@ -1,0 +1,44 @@
+package decisao;
+
+import javax.swing.JOptionPane;
+
+public class DesafioDecisaoComposta {
+
+	public static void main(String[] args) {
+		/*
+		 * Solicita o nome de um produ idade de uma pessoa
+		 * Sua apicação deve informar se:
+		 * ela é obrigada a votar
+		 * ela é impossbilitada de votar
+		 * o voto para ela é facultativo
+		 * 
+		 * acima de 70 anos e com 16 e 17 anos é facultativo
+		 * 18 - 70 => é obrigatório
+		 * menor de 16 anos => não vota
+		 */
+		
+		String produto = JOptionPane.showInputDialog("Produto").toUpperCase();
+		short qtde = Short.parseShort(JOptionPane.showInputDialog("Quantidade"));
+		float valor = Float.parseFloat(JOptionPane.showInputDialog("Valor"));
+		
+		String message = produto +": ";
+		
+		if(qtde > 20) {
+			message += "Estoque Alto";
+		}
+		else if (qtde < 10) {
+			message += "Estoque Baixo";
+		}
+		else {
+			message += "Estoque Normal";
+		}
+		
+		if(valor > 1000)
+		{
+			message += " - Valor Alto";
+		}
+		System.out.println(message);
+		JOptionPane.showMessageDialog(null, message);
+	}
+
+}

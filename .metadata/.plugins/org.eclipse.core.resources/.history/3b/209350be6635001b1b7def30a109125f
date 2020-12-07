@@ -1,0 +1,34 @@
+package br.com.universidadexyz.beans;
+
+public class Aluno {
+
+	private int rm;
+	private String nome;
+	private String cpf;
+	//private String email;
+	
+	public String retornarCpf() {
+		return cpf;
+	}
+	
+	public void preencherCpf(String pCpf) {
+		cpf = pCpf;
+	}
+	
+	public String retornarNome() {
+		return nome;
+	}
+	
+	public void preencherNome(String pNome) {
+		nome = pNome.toUpperCase();
+	}
+	
+	public int retornarRm() {
+		return rm;
+	}
+	
+	public void preencherRm(int pRm) {
+		rm = pRm;
+	}
+	
+}

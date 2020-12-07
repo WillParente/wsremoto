@@ -1,0 +1,8 @@
+package br.com.lojaabc.model;
+
+public class Snippet {
+	public static void main(String[] args) {
+		valorCompra *= (1 + porcentagem/100);
+	}
+}
+

@@ -1,0 +1,22 @@
+package br.com.bancofoz.model;
+
+public class Corrente extends Conta {
+	
+	private float limite;
+	private float taxa;
+		
+	public Corrente() {
+		super();
+	}
+
+	public Corrente(short numero, byte digito, short agencia, float saldo, Cliente cliente, float limite, float taxa) {
+		super(numero, digito, agencia, saldo, cliente);
+		this.limite = limite;
+		this.taxa = taxa;
+	}
+	
+	
+	
+	
+
+}

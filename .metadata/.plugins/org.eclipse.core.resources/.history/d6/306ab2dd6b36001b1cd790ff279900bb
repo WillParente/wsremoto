@@ -1,0 +1,47 @@
+package br.com.bancofoz.teste;
+
+import br.com.bancofoz.model.Cliente;
+import br.com.bancofoz.model.Conta;
+import br.com.bancofoz.model.Corrente;
+import br.com.bancofoz.model.Endereco;
+import br.com.bancofoz.model.Poupanca;
+import br.com.bancofoz.util.Magic;
+public class ImpementarConta {
+
+	public static void main(String[] args) {
+
+		Endereco endereco = new Endereco(
+				Magic.s("Logradouro"),
+				Magic.s("Numero"),
+				Magic.s("Complemento"),
+				Magic.s("Bairro"),
+				Magic.s("Cidade"),
+				Magic.s("UF"),
+				Magic.s("CEP")
+				);
+		Cliente cliente = new Cliente(
+				Magic.i("Id"),
+				Magic.s("Nome"),
+				Magic.s("Email"),
+				Magic.b("Especial?"),
+				Magic.s("CPF"),
+				endereco
+				);
+		
+		String opcao = Magic.s("Digite cc para conta corrente").toUpperCase();
+		Conta conta = null;
+		if(opcao == "CC") { 
+			conta = new Corrente(
+					Magic.sh("Numero"),
+					Magic.by("Digito"),
+					Magic.sh("Agencia"),
+					Magic.f("Saldo"),
+					cliente,
+					Magic.f("Limite"),
+					Magic.f("Taixa")
+					);
+		} 
+		System.out.println(conta.toString());
+	}
+
+}

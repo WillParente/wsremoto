@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.Properties"/>
+    <fullyQualifiedTypeName name="br.com.elevador.modelo.Elevador"/>
+    <fullyQualifiedTypeName name="br.com.universidadexyz.beans.Aluno"/>
+    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="br.com.universidadexyz.beans.Professor"/>
+    <fullyQualifiedTypeName name="br.com.universidadexyz.beans.Endereco"/>
+    <fullyQualifiedTypeName name="br.com.lojaabc.util.Magic"/>
+    <fullyQualifiedTypeName name="br.com.lojaabc.model.PessoaFisica"/>
+    <fullyQualifiedTypeName name="br.com.lojaabc.model.Cliente"/>
+    <fullyQualifiedTypeName name="br.com.bancofoz.model.Poupanca"/>
+</qualifiedTypeNameHistroy>

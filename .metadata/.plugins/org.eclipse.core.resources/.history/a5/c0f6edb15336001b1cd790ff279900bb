@@ -1,0 +1,28 @@
+package br.com.lojaabc.test;
+
+import br.com.lojaabc.model.PessoaFisica;
+import br.com.lojaabc.util.Magic;
+
+public class ImplementaCliente {
+
+	public static void main(String[] args) {
+		
+		char opcao = Magic.s("Digite F  para pessoa Fisica").charAt(0);
+		if(opcao == 'F') {
+			PessoaFisica cliente = new PessoaFisica();
+			cliente.setNome(Magic.s("Nome"));
+			cliente.setCpf(Magic.s("CPF"));
+			cliente.setEmail(Magic.s("Email"));
+			cliente.setEspecial(Magic.b("Cliente Especial?"));
+			cliente.setId(Magic.i("Código"));
+			cliente.setNascimento(Magic.s("Nascimento"));
+			cliente.setRg(Magic.s("RG"));
+			System.out.println(cliente.toString());
+		} else {
+			//PessoaJuridica cliente = new PessoaJuridica();
+			//cliente.setC
+		}
+
+	}
+
+}

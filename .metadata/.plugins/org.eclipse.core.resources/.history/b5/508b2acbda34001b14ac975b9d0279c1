@@ -1,0 +1,29 @@
+package br.com.elevador.testes;
+
+import javax.swing.JOptionPane;
+
+import br.com.elevador.modelo.Elevador;
+
+public class TesteElevador {
+
+	public static void main(String[] args) {
+		
+		Elevador elevador = new Elevador();
+		
+		elevador.definir(JOptionPane.showInputDialog("Nome"), 
+				Short.parseShort(JOptionPane.showInputDialog("Andar Máximo")),
+				Short.parseShort(JOptionPane.showInputDialog("Andar Minímo")), 
+				Byte.parseByte(JOptionPane.showInputDialog("Capacidade Pessoas")));
+		
+		elevador.subir();
+		elevador.descer();
+		elevador.entrar((byte) 5);
+		elevador.sair((byte) 2);
+		elevador.subir((short) 5);
+		elevador.descer((short) 2);
+		
+		JOptionPane.showMessageDialog(null, elevador.exibirDados());
+
+	}
+
+}

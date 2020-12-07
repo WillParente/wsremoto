@@ -1,0 +1,32 @@
+package br.com.concessionariarubinho.modelo;
+
+public class CarroFormula1 {
+	private String cor;
+	private float valor;
+	private String escuderia;
+	private float velocidade;
+	private boolean status;
+	
+	
+	public void preencherEscuderai(String param) {
+		escuderia = param.toUpperCase();
+	}
+	
+	public void preencherCor(String param) {
+		cor = param.toUpperCase();
+	}
+	
+	public void preencherValor(float param) {
+		if(param > 0) {
+			valor = param;
+		}
+	}
+	
+	public String retornarEscuderia() {
+		return escuderia;
+	}
+	
+	public String retornarCor() {
+		return cor;
+	}
+}

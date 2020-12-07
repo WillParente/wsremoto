@@ -1,0 +1,24 @@
+package br.com.universidadexyz.implementacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.universidadexyz.beans.Curso;
+
+public class ImplementarCurso {
+
+	public static void main(String[] args) {
+		
+		Curso curso = new Curso();
+		String descricao = JOptionPane.showInputDialog("Descrição");
+		float valor = Float.parseFloat(JOptionPane.showInputDialog("Valor"));
+		short cargaHoraria = Short.parseShort(JOptionPane.showInputDialog("Carga Horária"));
+		String sigla = JOptionPane.showInputDialog("Sigla");
+		int id = Integer.parseInt(JOptionPane.showInputDialog("Id"));
+		int duracao = Integer.parseInt(JOptionPane.showInputDialog("Duração"));
+		
+		curso.setAll(descricao, valor, cargaHoraria, sigla, id, duracao);
+		
+		System.out.println(curso.getAll());
+	}
+
+}

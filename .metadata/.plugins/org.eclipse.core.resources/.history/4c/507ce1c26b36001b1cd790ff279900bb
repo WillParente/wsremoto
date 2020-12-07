@@ -1,0 +1,25 @@
+package br.com.bancofoz.teste;
+
+import br.com.bancofoz.model.Conta;
+import br.com.bancofoz.model.Corrente;
+import br.com.bancofoz.util.Magic;
+
+public class ImpementarConta {
+
+	public static void main(String[] args) {
+		
+		String opcao = Magic.s("Digite cc para conta corrente").toUpperCase();
+		Conta conta = null;
+		if(opcao == "CC") { 
+			conta = new Corrente(
+					
+					);
+		} else {
+			conta = new Poupanca(
+					
+					);
+		}
+
+	}
+
+}
