@@ -1,7 +1,0 @@
-package exercicios;
-
-public class Snippet {
-	double aumento = (salario > 1500.01) ? 25.00 : (salario < 450.00) ? 100.00 : (salario >= 450.01 && salario <= 750.00) ? 75.00 : 50.00;
-				message = "Aumento: " + (salario = aumento);
-}
-

@@ -3,11 +3,18 @@
     <fullyQualifiedTypeName name="java.util.Properties"/>
     <fullyQualifiedTypeName name="br.com.elevador.modelo.Elevador"/>
     <fullyQualifiedTypeName name="br.com.universidadexyz.beans.Aluno"/>
-    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
     <fullyQualifiedTypeName name="br.com.universidadexyz.beans.Professor"/>
     <fullyQualifiedTypeName name="br.com.universidadexyz.beans.Endereco"/>
     <fullyQualifiedTypeName name="br.com.lojaabc.util.Magic"/>
     <fullyQualifiedTypeName name="br.com.lojaabc.model.PessoaFisica"/>
     <fullyQualifiedTypeName name="br.com.lojaabc.model.Cliente"/>
     <fullyQualifiedTypeName name="br.com.bancofoz.model.Poupanca"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="javax.persistence.Table"/>
+    <fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
+    <fullyQualifiedTypeName name="javax.persistence.Id"/>
 </qualifiedTypeNameHistroy>
